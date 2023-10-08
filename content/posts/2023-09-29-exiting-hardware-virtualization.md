@@ -14,9 +14,9 @@ categories = [
 ]
 +++
 
-Ubuntu 22.04.3 - после установки столкнулся с проблемой при выключении системы с ошибкой `kvm: exiting hardware virtualization`.
+Ubuntu 22.04.3 - после установки столкнулся с проблемой при выключении системы с ошибкой `kvm: exiting hardware virtualization`. <!--more-->
 
-## Kvm: exiting hardware virtualization <!--more-->
+## Kvm: exiting hardware virtualization
 
 Итак, система Ubuntu 22.04.3 LTS свежеустановленная, все обновления установлены. Но при выключении системы в логах возникает ошибка `kvm: exiting hardware virtualization`. Система зависает и выключить ее можно лишь при помощи hard shutdown.
 
