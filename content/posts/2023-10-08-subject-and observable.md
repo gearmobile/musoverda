@@ -1,8 +1,8 @@
 +++
 authors = ["Muso Verda"]
-title = "Разница между Observable и Subject"
+title = "Observable vs Subject"
 date = "2023-10-08"
-description = "Разберемся в разнице между Observable и Subject"
+description = "Разберемся в разнице между Observable и Subject."
 tags = [
     "rxjs",
 ]

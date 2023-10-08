@@ -5,7 +5,6 @@ date = "2022-09-12"
 description = "Ubuntu - проблема с KVM Switch"
 tags = [
     "ubuntu",
-    "kvm switch",
 ]
 categories = [
     "linux"
