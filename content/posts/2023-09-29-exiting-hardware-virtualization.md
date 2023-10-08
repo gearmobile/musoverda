@@ -2,19 +2,15 @@
 authors = ["Muso Verda"]
 title = "Ubuntu 22.04 - ошибка с KVM virtualization"
 date = "2023-09-29"
-description = "Ubuntu - ошибка с kvm при выключении"
+description = "Ubuntu 22.04.3 - после установки столкнулся с проблемой при выключении системы с ошибкой `kvm: exiting hardware virtualization`"
 tags = [
     "ubuntu",
     "kvm",
-    "shutdown",
-    "grub"
 ]
 categories = [
     "linux"
 ]
 +++
-
-Ubuntu 22.04.3 - после установки столкнулся с проблемой при выключении системы с ошибкой `kvm: exiting hardware virtualization`. <!--more-->
 
 ## Kvm: exiting hardware virtualization
 

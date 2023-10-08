@@ -6,7 +6,6 @@ description = "Ubuntu - проблема с KVM Switch"
 tags = [
     "ubuntu",
     "kvm switch",
-    "lid switch",
 ]
 categories = [
     "linux"
