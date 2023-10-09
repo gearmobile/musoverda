@@ -30,7 +30,7 @@ paginate = 5
 [languages]
   [languages.en]
     title = "Don't panic!"
-    subtitle = "A simple theme for Hugo"
+    subtitle = "Notemarks of development"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
