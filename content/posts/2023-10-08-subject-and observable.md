@@ -63,19 +63,33 @@ subject.complete();
 #### ReplaySubject (повторяющий Subject)
 
 {{< highlight typescript >}}
-const subject = new ReplaySubject();
-subject.subscribe(x => console.log(x));
-subject.next(1); // в консоли: 1
-subject.next(2); // в консоли: 2
+const replaySubject = new ReplaySubject<number>();
+replaySubject.subscribe((v) => console.log('first stream', v));
 
-subject.subscribe(x => console.log(x));
-// в консоли:
-// 1
-// 2
-subject.complete();
+replaySubject.next(1);
+replaySubject.next(2);
+
+replaySubject.subscribe((v) => console.log('second stream', v));
+
+replaySubject.next(3);
+
+replaySubject.complete();
 {{< /highlight >}}
 
-При подписке повторяющий Subject уведомляет своего зрителя о всех произошедшем в нём событиях с момента создания. Для увеличения производительности, мы можем ограничить количество событий, повторяющихся для каждого подписчика:
+Вывод в консоли будет таким:
+
+{{< highlight bash >}}
+first stream 1
+first stream 2
+
+second stream 1
+second stream 2
+
+first stream 3
+second stream 3
+{{< /highlight >}}
+
+При подписке повторяющий Subject уведомляет своего подписчика о **всех** произошедших в нем событиях **с момента создания**. Для увеличения производительности, мы можем **ограничить** количество событий, повторяющихся для каждого подписчика:
 
 {{< highlight typescript >}}
 const subject = new ReplaySubject(2); // будут повторяться только 2 последних события
