@@ -7,3 +7,6 @@
 <!-- - form value accessor -->
 <!-- - doCheck - как работает, пример -->
 <!-- - токены в angular -->
+<!-- new InjectionToken -->
+<!-- https://netbasal.com/using-angular-ngoptimizedimage-to-implement-image-loading-best-practices-e20a69d71ea3 -->
+<!-- https://netbasal.com/the-hidden-power-of-injectiontoken-factory-functions-in-angular-d42d5575859b -->
